@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 
+#main {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 9fr;
+}
+
+#left-border {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: repeat(auto-fill, max(50px));
+}
+
 .container {
     display: grid;
     gap: 1rem;
@@ -47,3 +59,21 @@ body {
     box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
     transform: translateY(-3px) scale(1.1);
 }
+
+button {
+    padding: 0.46em 1.6em;
+    border: 0.1em solid #000000;
+    border-radius: 0.12em;
+    color: #000000;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    text-align: center;
+    transition: all 0.15s;
+    background-color:#668fff;
+}
+
+button:hover {
+    text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
